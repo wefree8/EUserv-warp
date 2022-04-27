@@ -160,8 +160,8 @@ function w64(){
 		apt-get update -y &&  apt install sudo -y
 		apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf -O /usr/local/bin/wgcf
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wireguard-go -O /usr/bin/wireguard-go
+wget -N -6 https://cdn.jsdelivr.net/gh/wefree8/EUserv-warp/wgcf -O /usr/local/bin/wgcf
+wget -N -6 https://cdn.jsdelivr.net/gh/wefree8/EUserv-warp/wireguard-go -O /usr/bin/wireguard-go
 chmod +x /usr/local/bin/wgcf
 chmod +x /usr/bin/wireguard-go
 echo | wgcf register
@@ -196,8 +196,8 @@ function w646(){
 		apt-get update -y &&  apt install sudo -y
 		apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf -O /usr/local/bin/wgcf
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wireguard-go -O /usr/bin/wireguard-go
+wget -N -6 https://cdn.jsdelivr.net/gh/wefree8/EUserv-warp/wgcf -O /usr/local/bin/wgcf
+wget -N -6 https://cdn.jsdelivr.net/gh/wefree8/EUserv-warp/wireguard-go -O /usr/bin/wireguard-go
 chmod +x /usr/local/bin/wgcf
 chmod +x /usr/bin/wireguard-go
 echo | wgcf register
@@ -233,8 +233,8 @@ function w66(){
 		apt-get update -y &&  apt install sudo -y
 		apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf -O /usr/local/bin/wgcf
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wireguard-go -O /usr/bin/wireguard-go
+wget -N -6 https://cdn.jsdelivr.net/gh/wefree8/EUserv-warp/wgcf -O /usr/local/bin/wgcf
+wget -N -6 https://cdn.jsdelivr.net/gh/wefree8/EUserv-warp/wireguard-go -O /usr/bin/wireguard-go
 chmod +x /usr/local/bin/wgcf
 chmod +x /usr/bin/wireguard-go
 echo | wgcf register
@@ -301,18 +301,18 @@ systemctl status wg-quick@wgcf
 }
 
 function up4(){
-wget -N --no-check-certificate https://raw.githubusercontent.com/YG-tsj/EUserv-warp/main/wgmd.sh && chmod +x wgmd.sh && ./wgmd.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/wefree8/EUserv-warp/main/wgmd.sh && chmod +x wgmd.sh && ./wgmd.sh
 }
 
 function up6(){
 echo -e nameserver 2a00:1098:2c::1 > /etc/resolv.conf
-wget -6 -N --no-check-certificate https://raw.githubusercontent.com/YG-tsj/EUserv-warp/main/wgmd.sh && chmod +x wgmd.sh && ./wgmd.sh
+wget -6 -N --no-check-certificate https://raw.githubusercontent.com/wefree8/EUserv-warp/main/wgmd.sh && chmod +x wgmd.sh && ./wgmd.sh
 }
 
 #主菜单
 function start_menu(){
     clear
-    yellow " 详细说明 https://github.com/YG-tsj/EUserv-warp  YouTube频道：甬哥侃侃侃" 
+    yellow " 详细说明 https://github.com/wefree8/EUserv-warp " 
     
     red " 切记：进入脚本快捷方式 bash wgmd.sh "
     
